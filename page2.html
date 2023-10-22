@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #container {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label, input, select {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .file-input {
+      display: block;
+      margin: 10px 1;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>Vault of Codes Registration Form</h2>
+    <form action="#" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="profilePicture" class="file-input">Profile Picture:</label>
+      <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="terms" name="terms" required>
+        I agree to the <a href="#">Terms and Conditions</a>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

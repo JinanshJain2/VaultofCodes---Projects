@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Your existing CSS styles here */
+  </style>
+  <script>
+    function checkPasswordStrength() {
+      var password = document.getElementById("password").value;
+      var strength = document.getElementById("password-strength");
+
+      // Define your password strength criteria and update the indicator accordingly
+      if (password.length < 8) {
+        strength.innerHTML = "Weak";
+        strength.style.color = "red";
+      } else if (password.length < 12) {
+        strength.innerHTML = "Medium";
+        strength.style.color = "orange";
+      } else {
+        strength.innerHTML = "Strong";
+        strength.style.color = "green";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h2>Vault of Codes Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Your existing form fields -->
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" onkeyup="checkPasswordStrength()" required>
+      <div id="password-strength"></div>
+
+      <!-- Your remaining form elements -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
